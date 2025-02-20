@@ -415,6 +415,99 @@ Sys.Application.add_init(function() {
         </div>
     </div>
 
+
+
+
+
+
+	
+
+	<!-- Another Result Table for 242494 (Initially Hidden) -->
+<div id="AUContent_AnotherContentTable" class="card h-100" style="display: none; margin-top: 10px;">
+    <div class="panel-heading" style="background: linear-gradient(-60deg, #145082, #145082); color: white; border-radius: 5px; padding: 10px">
+        Air University Semester Result Report
+    </div>
+    <div id="AUContent_dvHtml2" class="col-md-12">
+        <div class="row">
+            <div class="col-md-4" style="text-align: center">
+                <img src="Assets/images/aulogo.bmp" style="height: 100px; margin-top: 10px">
+            </div>
+            <div class="col-md-6" style="margin-left: 50px">
+                <table id="AUContent_Table1_2" style="border-color: transparent; margin-top: 25px">
+                    <tbody>
+                        <tr style="padding: 10px">
+                            <td>
+                                <table id="AUContent_DataList2" cellspacing="0" style="border-collapse:collapse;">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                Registration ID : <b>242494</b>
+                                                <br>
+                                                Name :<b> Muhammad Ahmed Yar Zia Sial</b>
+                                                <br>
+                                                Class : <b>BSCYSev-F-24-B-1071</b>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12" id="content2">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <table id="AUContent_Table2_2" class="col-md-12" style="margin-top: 0px; padding-top: 0px">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div>
+                                    <table class="table table-striped table-hover table-bordered" cellspacing="0" rules="all" border="1" id="AUContent_GridView2" style="color:#333333;border-collapse:collapse;">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="col" style="background-color:Transparent;">Subject</th>
+                                                <th scope="col">Credit Hours</th>
+                                                <th scope="col">Grade</th>
+                                            </tr>
+                                            <tr><td>F-24-Applications of ICT Lab</td><td>1.00</td><td>B</td></tr>
+                                            <tr><td>F-24-Applications of ICT</td><td>2.00</td><td>A-</td></tr>
+                                            <tr><td>F-24-Discrete Structures</td><td>3.00</td><td>A</td></tr>
+                                            <tr><td>F-24-Functional English</td><td>3.00</td><td>A-</td></tr>
+                                            <tr><td>F-24-Introduction to Cyber Security Lab</td><td>1.00</td><td>B+</td></tr>
+                                            <tr><td>F-24-Introduction to Cyber Security</td><td>2.00</td><td>A-</td></tr>
+                                            <tr><td>F-24-Islamic Studies and Ethics</td><td>2.00</td><td>A-</td></tr>
+                                            <tr><td>F-24-Programming Fundamentals Lab</td><td>1.00</td><td>B+</td></tr>
+                                            <tr><td>F-24-Programming Fundamentals</td><td>3.00</td><td>A-</td></tr>
+                                            <tr><td>F-24-Quranic Studies</td><td>0.00</td><td>S</td></tr>
+                                            <tr><td>F-24-Sirat Ul Nabi</td><td>0.00</td><td>S</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="float: right; margin-bottom: 10px">
+                            <td colspan="2" style="height: 31px">
+                                <kbd><strong>GPA: </strong>
+                                    <span id="AUContent_lbl_gpa2">3.67</span></kbd>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+	
+	
+
 <script>
     document.getElementById("resultForm").addEventListener("submit", function(event) {
         event.preventDefault(); // Prevent page submission
@@ -428,7 +521,26 @@ Sys.Application.add_init(function() {
             document.getElementById("AUContent_Contenttabel").style.display = "block";
             // Optionally, hide the search form (if desired)
             document.getElementById("AUContent_searchupdatepanel").style.display = "none";
-        } else {
+        } 
+
+
+
+
+
+		
+		
+	 else if (regid === "242494" && cnic === "3420244232587") {
+    // Show the second result table
+    document.getElementById("AUContent_AnotherContentTable").style.display = "block";
+    document.getElementById("AUContent_searchupdatepanel").style.display = "none";
+}
+	 
+	 
+	 
+	 
+	 
+	 
+	 else {
             // Hide the result table
             document.getElementById("AUContent_Contenttabel").style.display = "none";
             // Optionally, show an error message
